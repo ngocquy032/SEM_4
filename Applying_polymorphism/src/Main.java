@@ -1,6 +1,8 @@
 import ex1.Rectangle;
 import ex1.Triangle;
 import ex2.MovablePoint;
+import ex3.MovableCircle3;
+import ex3.MovablePoint3;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -49,8 +51,16 @@ public class Main {
 //        point.display();
 //        point.moveLeft();
 //        point.display();
-//        aaaaa
 //        Ex3
+        MovablePoint3 point3 =  new MovablePoint3(10, 5, 4,5);
+        System.out.println(point3);
+        point3.moveUp();
+        System.out.println(point3);
+
+        MovableCircle3 circle3 = new MovableCircle3(20, 10 ,5, 4, 10);
+        System.out.println(circle3);
+        circle3.moveDown();
+        System.out.println(circle3);
 
     }
 }
