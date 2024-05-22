@@ -4,6 +4,7 @@ import com.example.thijava.DA.EmployeeDAO;
 import com.example.thijava.Entity.Employee;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -11,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
-
+@WebServlet("/")
 public class ServletEmployee extends HttpServlet {
     private EmployeeDAO employeeDAO;
     private RequestDispatcher dispatcher;
@@ -19,8 +20,8 @@ public class ServletEmployee extends HttpServlet {
     public void init() { employeeDAO = new EmployeeDAO(); }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doGet(req, resp);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
     }
 
     @Override

@@ -35,31 +35,30 @@
                 <% if (employee != null) { %>
                 <input type="hidden" name="id" value="<%= employee.getId() %>"/>
                 <% } %>
-
                 <fieldset class="form-group">
                     <label>Full Name</label>
                     <input type="text" value="<%= (employee != null) ? employee.getFullName() : "" %>"
-                           class="form-control" name="Full_Name">
+                           class="form-control" name="fullName">
                 </fieldset>
                 <fieldset class="form-group">
                     <label>Birthday</label>
                     <input type="date" value="<%= (employee != null) ? employee.getBirthday() : "" %>"
-                           class="form-control" name="Birthday">
+                           class="form-control" name="birthday">
                 </fieldset>
                 <fieldset class="form-group">
                     <label>Address</label>
                     <input type="text" value="<%= (employee != null) ? employee.getAddress() : "" %>"
-                           class="form-control" name="Address">
+                           class="form-control" name="address">
                 </fieldset>
                 <fieldset class="form-group">
                     <label>Position</label>
                     <input type="text" value="<%= (employee != null) ? employee.getPosition() : "" %>"
-                           class="form-control" name="Position">
+                           class="form-control" name="position">
                 </fieldset>
                 <fieldset class="form-group">
                     <label>Department</label>
                     <input type="text" value="<%= (employee != null) ? employee.getDepartment() : "" %>"
-                           class="form-control" name="Department">
+                           class="form-control" name="department">
                 </fieldset>
 
                 <button type="submit" class="btn btn-success">Save</button>

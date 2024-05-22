@@ -38,9 +38,10 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Email</th>
-                <th>Country</th>
-                <th>Actions</th>
+                <th>Birthday</th>
+                <th>Address</th>
+                <th>Position</th>
+                <th>Department</th>
             </tr>
             </thead>
             <tbody>
@@ -56,10 +57,10 @@
                 <td><%= emp.getPosition() %></td>
                 <td><%= emp.getDepartment() %></td>
 
-                <td>
-                    <a href="edit?id=<%= emp.getId() %>">Edit</a>
-                    <a href="delete?id=<%= emp.getId() %>">Delete</a>
-                </td>
+<%--                <td>--%>
+<%--                    <a href="edit?id=<%= emp.getId() %>">Edit</a>--%>
+<%--                    <a href="delete?id=<%= emp.getId() %>">Delete</a>--%>
+<%--                </td>--%>
             </tr>
             <%
                 }
