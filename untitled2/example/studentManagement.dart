@@ -113,7 +113,7 @@ Future<void> editStudent(List<Student> students, String filePath) async {
   // Tìm sinh viên cần sửa
   Student? studentToEdit = students.firstWhere(
         (student) => student.id == id,
-    orElse: () => null,
+    orElse: () =>  Student(id: id, name: 'Default Name', subjects: []),
   );
 
   if (studentToEdit == null) {
